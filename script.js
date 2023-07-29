@@ -94,4 +94,77 @@ const marksHigherBMI = marksBMI - johnHeight;
 console.log(
   `Mark's BMI (${marksBMI}) is higher than John's BMI (${johnsBMI})  `
 );
+
+// String and Template literals
+const firstName = "Nabil";
+const job = "student";
+const birthYear = 2003;
+const year = 2023;
+const Nabil =
+  "I'm" +
+  " " +
+  firstName +
+  ", a" +
+  " " +
+  (year - birthYear) +
+  " " +
+  "Years old" +
+  " " +
+  job +
+  "!"; //Strings
+console.log(Nabil);
+const nabilNew = `I'm ${firstName}, a ${year - birthYear} Years old Student!`; //Template literals:It makes easier our life
+//than the strings
+console.log(nabilNew);
+console.log(
+  "String \n\
+mutiple \n\
+lines "
+);
+console.log(`String
+multiple 
+lines
+`);
+//If else
+const age = 19;
+const isEnough = age >= 18;
+if (isEnough) {
+  console.log(`You can get Driving License `);
+} else if (age >= 20 && age <= 25) {
+  console.log(`You can't drive Your vehicle with Your wife`);
+} else if (age >= 26) {
+  console.log(`You cant drive Your vehicle with Your wife`);
+} else {
+  console.log(`You can neither drive nor get the license`);
+}
+
+const birthYear = 2012;
+let century;
+if (birthYear <= 2000) {
+  century = 2000;
+} else {
+  century = 21;
+}
+
+console.log(century);
+
+//Coding Challenge-02
+//Task-01
+const marksMass = 78;
+const markHeight = 1.69;
+const johnsMass = 92;
+const johnHeight = 1.95;
+const marksBMI = (marksMass / markHeight ** 2).toFixed(2);
+const johnsBMI = (johnsMass / (johnHeight * johnHeight)).toFixed(2);
+if (marksBMI > johnsBMI) {
+  console.log("Mark's BMI is Higher than John's!"); //Using Strings
+} else if (johnsBMI > marksBMI) {
+  console.log("John's BMI is Higher than Mark's!");
+}
+//Task-2
+if (marksBMI > johnsBMI) {
+  console.log(` Mark's BMI (${marksBMI}) is higher than Jon's (${johnsBMI})`);
+} else if (johnsBMI > marksBMI) {
+  console.log(` John's BMI (${johns}) is higher than Mark's (${marksBMI})`); //Using Templates Literal
+}
 */
